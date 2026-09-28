@@ -1,0 +1,6 @@
+{
+  "name": "FeminaCycle - Registro de Ciclo Menstrual y Fertilidad",
+  "description": "Seguimiento seguro y privado del ciclo menstrual, registro de síntomas diarios, temperatura basal con gráficas para identificar patrones fértiles y predicción de la regla.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

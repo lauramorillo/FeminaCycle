@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="50%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#9f1239" />
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe4e6" />
+      <stop offset="100%" stop-color="#fecdd3" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#881337" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle / circle -->
+  <rect width="512" height="512" rx="128" fill="url(#roseGrad)" />
+  <rect width="512" height="512" rx="128" fill="url(#innerGlow)" />
+
+  <!-- Outer Cycle Rings -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#ffe4e6" stroke-width="12" stroke-dasharray="14 10" stroke-opacity="0.6" />
+  <circle cx="256" cy="256" r="140" fill="#ffffff" fill-opacity="0.12" filter="url(#shadow)" />
+
+  <!-- Center Droplet / Lotus Blossom Symbol -->
+  <g transform="translate(256, 256)">
+    <!-- Elegant Water / Cycle Drop -->
+    <path d="M0 -90 C45 -30 75 15 75 60 C75 105 40 140 0 140 C-40 140 -75 105 -75 60 C-75 15 -45 -30 0 -90 Z" 
+          fill="#ffffff" />
+    
+    <!-- Inner Radiant Heart / Moon detail -->
+    <path d="M0 -35 C20 0 35 25 35 50 C35 70 20 85 0 85 C-20 85 -35 70 -35 50 C-35 25 -20 0 0 -35 Z" 
+          fill="#fda4af" />
+
+    <!-- Sparkle Stars -->
+    <path d="M75 -75 Q75 -55 95 -55 Q75 -55 75 -35 Q75 -55 55 -55 Q75 -55 75 -75 Z" fill="#fff1f2" />
+    <circle cx="-70" cy="-60" r="8" fill="#ffe4e6" />
+    <circle cx="90" cy="80" r="7" fill="#ffe4e6" />
+  </g>
+</svg>
